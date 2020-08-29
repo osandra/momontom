@@ -15,7 +15,9 @@
             <h1>00:00</h1>
         </div>
         <form class="js-form form">
-            <input class="name_input" type="text" placeholder=" What is your name? Please Enter!">
+            <input class="name_input" type="text" placeholder=" What is your name? Please Enter!" required
+            oninvalid="this.setCustomValidity('한 글자 이상 입력해주세요.')"
+            oninput="this.setCustomValidity('')">
             <input type="submit" class="submit_btn" value="submit">
         </form>
         <p class="js-greetings greetings"></p>

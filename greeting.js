@@ -1,5 +1,6 @@
 const form = document.querySelector(".js-form"),
 input = form.querySelector("input"),
+submit_btn = form.querySelector(".submit_btn"),
 greeting = document.querySelector(".js-greetings"),
 button = document.querySelector(".change-name");
 
@@ -15,20 +16,15 @@ function saveName(text){
 function resetName(event){
     //button.classList.add(HIDDEN_CN);
     event.preventDefault();
-    localStorage.removeItem(USER_NM);
-    greeting.innerHTML="";
+    localStorage.removeItem(USER_NM); //localstorage에 저장된 username 제거
+    greeting.innerHTML=""; 
     showName();    
 }
 
 function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    if(text===''){
-        alert('한 글자 이상 입력해주세요.')
-        askForName();
-    }else{
-        greeting.innerHTML = `${text}`;
-    }
+    greeting.innerHTML = `${text}`;
 }
 
 function handleSumbit(event){
