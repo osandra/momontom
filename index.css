@@ -12,17 +12,14 @@
 h1{ 
     font-family: 'Special Elite', cursive;
     color: #5352ed;
-    transition: color 0.5s ease-in-out; /*스르륵 바뀌네 대박*/
+    transition: color 0.5s ease-in-out;
 }
 .js-greetings{
     font-family: 'NeoDunggeunmo';
     color: lightcoral;
-
     font-weight: 500;
     font-size: 3rem;
     text-shadow: 0.1px 0.1px black;
-
-    
 }
 .clicked{
     color: white;
@@ -44,15 +41,18 @@ h1{
     visibility: hidden;
 }
 
+
 .change-name{
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    top: 3vh;
+    right: 1vw;
+    /* margin: 0 auto; */
     font-family: 'NeoDunggeunmo';
     border-radius: 1rem;
     border: 1px solid #5352ed;
     height: 3vh;
-    margin-top: 2vh;
-    transition: color 0.2s ease-in-out; /*스르륵 바뀌네 대박*/
+    /* margin-top: 1vh; */
+    transition: color 0.2s ease-in-out; 
     color: black;
 }
 .change-name:hover{
@@ -60,6 +60,7 @@ h1{
     color: white;
 }
 .text_container{
+    position: relative;
     width: 35vw;
     height: 60vh;
     border-radius: 1rem;
@@ -106,7 +107,7 @@ li{
 }
 
 .spanWidth{
-    min-width: 23vw;
+    min-width: 28vw;
     display: inline-block;
 }
 ul{
@@ -118,7 +119,7 @@ ul{
     font-family: 'NeoDunggeunmo';
     margin-top: 3vh;
     border: none;
-    width: 25vw;
+    width: 30vw;
     height: 3vh;
     font-size: 1.1rem;
 }
