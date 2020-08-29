@@ -1,0 +1,153 @@
+
+*:focus{
+    outline: none;
+}
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{ 
+    font-family: 'Special Elite', cursive;
+    color: #5352ed;
+    transition: color 0.5s ease-in-out; /*스르륵 바뀌네 대박*/
+}
+.js-greetings{
+    font-family: 'NeoDunggeunmo';
+    color: lightcoral;
+
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: 0.1px 0.1px black;
+
+    
+}
+.clicked{
+    color: white;
+}
+.btn{
+    font-weight: 900;
+    font-style: italic;
+}
+
+.form, .greetings {
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.change-name{
+    display: block;
+    margin: 0 auto;
+    font-family: 'NeoDunggeunmo';
+    border-radius: 1rem;
+    border: 1px solid #5352ed;
+    height: 3vh;
+    margin-top: 2vh;
+    transition: color 0.2s ease-in-out; /*스르륵 바뀌네 대박*/
+    color: black;
+}
+.change-name:hover{
+    background-color: #5352ed;
+    color: white;
+}
+.text_container{
+    width: 35vw;
+    height: 60vh;
+    border-radius: 1rem;
+    background-color: rgb(255,255,255,0.7);
+    /* 텍스트 빼고 background만 흰색 opacity주기 */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3vh;
+    padding-top: 3vh;
+}
+
+.name_input{
+    font-family: 'NeoDunggeunmo', 'Special Elite', cursive;
+    border: none;
+    width: 25vw;
+    height: 3vh;
+    font-size: 1.3rem;
+    margin-bottom: 0.5vh;
+    border-radius: 3rem;;
+}
+.submit_btn{
+    font-family: 'NeoDunggeunmo';
+    transition: color 0.2s ease-in-out;
+    font-size: 1.1rem;
+    height: 3vh;
+    border: 1px solid #5352ed;
+    margin-left: 1.3vw;
+    line-height: 3vh;
+    border-radius: 3rem;
+}
+.submit_btn:hover{
+    background-color: #5352ed;
+    color: white;
+}
+
+
+li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin-bottom: 0.7vh;
+    color: #5352ed;
+    text-shadow: 0.3px 0.3px black;
+    
+}
+
+.spanWidth{
+    min-width: 23vw;
+    display: inline-block;
+}
+ul{
+    font-family: 'NeoDunggeunmo';
+    margin-top: 1vh;
+    padding-left: 0;
+}
+.js-toDoForm input{
+    font-family: 'NeoDunggeunmo';
+    margin-top: 3vh;
+    border: none;
+    width: 25vw;
+    height: 3vh;
+    font-size: 1.1rem;
+}
+.js-toDoList li{
+    height: 3vh;
+    line-height: 3vh;
+}
+.js-toDoList li button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.bgimage{
+    /*이미지가 body시작부분부터 보이도록*/
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -2; /*텍스트가 위에 보이게*/
+    width: 100%;
+    animation: fadeIn 0.7s linear;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
