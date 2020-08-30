@@ -9,7 +9,7 @@ function getRandomNumber(){
 
 function loadImage(imagenumber){
     const image = new Image(); //image 객체가 생성되어 속성을 추가할 수 있음
-    image.src = `https://osandra.github.io/practice_js/images/${imagenumber+1}.jpg`
+    image.src = `https://osandra.github.io/momontom/images/${imagenumber+1}.jpg`
     // image.src = `./images/${imagenumber+1}.jpg`
 
     image.classList.add('bgimage');
