@@ -58,5 +58,3 @@ function init(){
     button.addEventListener("click",resetName);
 }
 init();
-
-

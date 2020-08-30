@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAPPY</title>
-    <link rel="stylesheet" href="./index.css"
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">   
 </head>
 <body>
+    <script src="background.js"></script>
     <!-- <h1 id="title" class="btn">Hi</h1> -->
-    <!-- <script src="./index.js"></script> -->
-    <div class="text_container">
+    <!-- <script src="./index.js"></script> --> 
+    <div class="text_container hidden">
+        <span class="js-weather"></span>
         <div class="js-clock">
-            <h1>00:00</h1>
+            <p class="clock-text">00:00</p>
         </div>
         <form class="js-form form">
-            <input class="name_input" type="text" placeholder=" What is your name? Please Enter!" required
-            oninvalid="this.setCustomValidity('한 글자 이상 입력해주세요.')"
-            oninput="this.setCustomValidity('')">
+            <input class="name_input" type="text" placeholder=" 이름을 입력해주세요!" required
+                oninvalid="this.setCustomValidity('한 글자 이상 입력해주세요.')" oninput="this.setCustomValidity('')">
             <input type="submit" class="submit_btn" value="submit">
         </form>
         <p class="js-greetings greetings"></p>
         <button class="change-name">이름 변경</button>
         <form class="js-toDoForm">
-            <input type="text" placeholder=" 오늘 하고 싶은 일이 뭔가요?"">
+            <input type="text" placeholder=" 오늘 하고 싶은 일이 뭔가요?" required
+                oninvalid="this.setCustomValidity('한 글자 이상 입력해주세요.')" oninput="this.setCustomValidity('')">
         </form>
         <ul class="js-toDoList">
-
         </ul>
+        <div class="done_text_container">
+            <ul class="js-doneList">
+                <p class="completed_todo">MISSION COMPLETED</p>
+            </ul>
+        </div>
     </div>
+    <script src="config.js"></script>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
-    <script src="background.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
